@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<letsencrypt>
+<appsettings>
+    <!-- Shared configuration -->
+    <appsetting name="letsencrypt:webApps" value="devxxxxxdev" />
+    <appsetting name="letsencrypt:subscriptionId" value="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX" />
+    <appsetting name="letsencrypt:tenantId" value="xxxxxxxxxxxxx.onmicrosoft.com" />
+    <appsetting name="letsencrypt:email" value="xxxxx@xxxxxxx.com" />
+    <appsetting name="letsencrypt:renewXNumberOfDaysBeforeExpiration" value="30" />
+    <appsetting name="letsencrypt:clientId" value="xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx" />
+
+    
+    <!-- App-specific configuration (overrides the shared configuration settings -->
+    <appsetting name="letsencrypt:devxxxxxdev-resourceGroup" value="devxxxxxdev-resourcegroup" />
+    <appsetting name="letsencrypt:devxxxxxdev-hosts" value="xxx.com;yyy.com" />
+
+    
+</appsettings>
+
+<!-- Consider adding the client secret and/or client id manually for security reasons. Never share or add this info to source control. -->
+<connectionstrings>
+    <connectionstring name="letsencrypt:clientSecret" value="XXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+</connectionstrings>
+</letsencrypt>
